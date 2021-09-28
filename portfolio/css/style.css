@@ -21,7 +21,7 @@ nav.top-nav {
     position: fixed;
     top: 0;
     height: 70px;
-    width: 100%;
+    /* width: 100%; */
     z-index: 10;
 }
 #welcome-section .header {
@@ -147,6 +147,9 @@ nav.top-nav {
     margin-bottom: 30px;
     font-weight: bold;
 }
+.tab-content a:hover {
+    background-color: white;
+}
 .tab-content img {
     height: 300px;
     width: 450px;
@@ -233,6 +236,9 @@ a:hover {
 }
 .carousel.carousel-slider .carousel-item p {
     font-size: 18px;
+}
+.carousel {
+    height: 350px !important;
 }
 .carousel-item {
     display: flex;
@@ -349,4 +355,9 @@ a:hover {
 }
 .footer-nav ul li a:hover {
     background-color: #462518;
+}
+@media only screen and (max-width: 855px) {
+    #welcome-section {
+        background-color: #ff966d;
+    }
 }
