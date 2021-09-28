@@ -21,6 +21,8 @@ nav.top-nav {
     position: fixed;
     top: 0;
     height: 70px;
+    width: 100%;
+    z-index: 10;
 }
 #welcome-section .header {
     margin: 0px 50px;
