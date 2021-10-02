@@ -147,13 +147,42 @@ nav.top-nav {
     margin-bottom: 30px;
     font-weight: bold;
 }
-.tab-content a:hover {
-    background-color: white;
+.tab-content a {
+    background-color: #ff8553;
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 450px;
+    margin-bottom: 15px;
+}
+.tab-content .caption {
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 100, 100, 0.3);
+    position: absolute;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.tab-content .caption p {
+    color: #ff8b5b;
+    font-size: 0px;
+    transition: 0.2s;
+}
+.tab-content a:hover .caption {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+.tab-content a:hover p {
+    font-size: 30px;
 }
 .tab-content img {
     height: 300px;
     width: 450px;
-    margin-bottom: 15px;
     border-radius: 10px;
 }
 .more-work {
